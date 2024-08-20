@@ -122,7 +122,7 @@ nav.navbar.bootsnav {
     color: #9b59b6;
     font-size: 20px;
     font-weight: 600;
-    padding: 33px 0px 57px;
+    padding: 9px 0px 57px; /** 33px**/
     text-transform: uppercase;
 }
 /*.navbar-brand*/
@@ -190,7 +190,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #9b59b6;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../photos/photobg.jpeg)no-repeat;
+    background:url(https://png.pngtree.com/thumb_back/fh260/background/20230630/pngtree-d-rendering-of-a-glowing-digital-business-interface-showcasing-finance-innovation-image_3694007.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
