@@ -1,0 +1,155 @@
+{
+  "educations": "Bildung",
+  "skills_nav": "Fähigkeiten",
+  "experience_nav": "Erfahrung",
+  "profiles": "Profil",
+  "portfolio": "Portfolio",
+  "internship": "Praktikum",
+  "contact": "Kontakt",
+  "welcomeHero": {
+    "greeting": "hallo",
+    "introduction": "ich bin Samah Dhouihri",
+    "description": "eine Finanzstudentin",
+    "downloadResume": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "heading": "über mich",
+    "intro": "Ich bin eine leidenschaftliche Finanzstudentin mit großem Interesse an Anlagestrategien und Marktanalysen. Meine Reise in der Finanzwelt hat mich mit den Fähigkeiten ausgestattet, um komplexe finanzielle Landschaften zu navigieren.",
+    "details": "Mit einem soliden Fundament in finanziellen Prinzipien widme ich mich dem Verständnis der Feinheiten der Finanzwelt. Ich liebe Herausforderungen und bin immer neugierig darauf, mehr über Finanzmärkte, Risikomanagement und wirtschaftliche Trends zu erfahren. Mein Ziel ist es, zu innovativen Finanzlösungen beizutragen, die Erfolg bringen.",
+    "phone": "Telefon",
+    "phoneNumber": "+216 93 870 871",
+    "email": "E-Mail",
+    "emailAddress": "dhouihrisameh@gmail.com",
+    "website": "Webseite",
+    "profileImageAlt": "Profilbild",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "education": {
+    "heading": "Bildung",
+    "baccalaureateYear": "2022",
+    "baccalaureateTitle": "Abitur in Mathematik",
+    "baccalaureateSchool": "Lycee Hay Riadh, Bouficha",
+    "baccalaureateLocation": "Bouficha, Sousse",
+    "currentYear": "2021 - Gegenwart",
+    "currentTitle": "Lizenz in Finanzwesen",
+    "currentSchool": "ESTIM Business School",
+    "currentLocation": "Sahloul, Sousse"
+  },
+  "skills": {
+    "heading": "Sprachen",
+    "languages": {
+      "arabic": "Arabisch",
+      "english": "Englisch",
+      "french": "Französisch",
+      "spanish": "Spanisch",
+      "german": "Deutsch"
+    }
+  },
+  "experience": {
+    "heading": "Verschiedenes",
+    "items": [
+      {
+        "date": "2024 - 2025",
+        "title": "Besuch der Cité de la Culture mit der ESTIM Business School",
+        "role": "Universitätsreise",
+        "location": "Tunis, Tunesien",
+        "description": "Teilnahme an einer geführten Tour durch die Cité de la Culture, bei der ich verschiedene Ausstellungen und kulturelle Veranstaltungen erkundet habe. Dieser Besuch vermittelte wertvolle Einblicke in die Schnittstelle von Kultur und Wirtschaft und stärkte mein Verständnis für die Rolle kultureller Einrichtungen in der wirtschaftlichen Entwicklung."
+      },
+      {
+        "date": "2024 - 2025",
+        "title": "Teilnahme an der 3. Ausgabe des Forums für Investitionen und private Initiative",
+        "role": "Teilnehmer und Beitragender beim Investitionsforum",
+        "location": "Tunis, Tunesien",
+        "description": "Beteiligung an Diskussionen und Workshops zu Investitionsmöglichkeiten und -strategien. Beitrag von Erkenntnissen zu gemeinschaftsorientierten Initiativen und Networking mit Branchenführern zur Förderung von Zusammenarbeit und Innovation im Finanzsektor."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Teilnahme an der 1. Ausgabe der Projets des Estimiens mit einem Sensibilisierungsprojekt",
+        "role": "Projektkoordinator bei Projets des Estimiens",
+        "location": "Sahloul, Sousse",
+        "description": "Koordination eines Sensibilisierungsprojekts, das darauf abzielt, die Gemeinschaft über wichtige soziale Themen aufzuklären. Diese Rolle umfasste die Organisation von Veranstaltungen, die Zusammenarbeit mit lokalen Organisationen und die Einbindung von Teilnehmern, um ein Gefühl für gesellschaftliches Engagement und Verantwortung zu fördern."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Teilnahme an einem Seminar zu Business Intelligence",
+        "role": "Teilnahme am Seminar",
+        "location": "Sahlool, Sousse",
+        "description": "Teilnahme an einem Business-Intelligence-Seminar, das sich auf die neuesten Trends und Werkzeuge in der Datenanalyse konzentrierte. Diese Erfahrung vertiefte mein Verständnis für datenbasierte Entscheidungsfindung und bot wertvolle Einblicke in effektive Geschäftsstrategien."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Social Media Manager",
+        "role": "Social Media Manager für den “We Lead Club” an der ESTIM Business School",
+        "location": "Sahlool, Sousse",
+        "description": "Als Social Media Manager bin ich verantwortlich für die Entwicklung und Implementierung von Social-Media-Strategien zur Verbesserung der Online-Präsenz des Clubs, zur Interaktion mit den Studenten und zur Promotion von Veranstaltungen. Meine Rolle umfasst die Erstellung von Inhalten, die Verwaltung von Social-Media-Konten und die Analyse von Leistungskennzahlen zur Förderung von Engagement und Wachstum."
+      },
+      {
+        "date": "2022 - 2023",
+        "title": "Freiwilliger beim Croissant Rouge Polyestim und aktives Mitglied des Enactus Club Polytechnique",
+        "role": "Clubs-Mitglied",
+        "location": "Sahlool, Sousse",
+        "description": "Aktive Teilnahme an Projekten zur Verbesserung der Gemeinschaft und zur Entwicklung von Unternehmertum."
+      },
+      {
+        "date": "2023",
+        "title": "Unterricht von Französisch und Englisch für Schüler an Grund- und Sekundarschulen",
+        "role": "Lehrer",
+        "location": "Bouficha, Sousse",
+        "description": "Der Unterricht von Französisch und Englisch an Schülern der Grund- und Sekundarschulen umfasst die Entwicklung ihrer Sprachfähigkeiten, die Verbesserung ihrer Kommunikationsfähigkeiten und die Förderung der Lernfreude durch ansprechende und interaktive Lektionen."
+      }
+    ]
+  },
+  "hobbies": {
+    "heading": "Hobbys",
+    "items": [
+      {
+        "icon": "fa-record-vinyl",
+        "name": "Fotografie"
+      },
+      {
+        "icon": "fa-video",
+        "name": "Videografie"
+      },
+      {
+        "icon": "fa-bezier-curve",
+        "name": "Grafikdesign"
+      },
+      {
+        "icon": "fa-music",
+        "name": "Musik"
+      },
+      {
+        "icon": "fa-person-walking",
+        "name": "Sport"
+      }
+    ]
+  },
+  "contact_me": {
+    "heading": "Kontaktieren Sie mich",
+    "form": {
+      "name": "Name*",
+      "email": "Email*",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Absenden"
+    },
+    "address": {
+      "name": "Samah Dhouihri",
+      "title": "Finanzstudent",
+      "phone": "Telefon",
+      "phoneNumber": "+216 93 870 871",
+      "email": "Email",
+      "emailAddress": "dhouihrisameh@gmail.com"
+    },
+    "socials": {
+      "facebook": "https://www.facebook.com/profile.php?id=100005041907790",
+      "instagram": "https://www.instagram.com/samah_dhouihri/"
+    }
+  },
+  "footer": {
+    "copyright": "&copy; copyright samah_dhouihri",
+    "scrollToTop": "Nach oben scrollen"
+  }
+}

@@ -1,37 +1,40 @@
-
 <header class="top-area">
-    <div class="header-area">
+  <div class="header-area">
+    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+      <div class="container" >
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand">
+            <img src="assets/photos/samah-logo-purple.png" style="width: 70px; height: 70px;">
+          </a>
+        </div>
 
-        <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-
-            <div class="container">
-
-                
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand"><img src="assets/photos/samah-logo-purple.png" style="width: 70px;height: 70px;"></a>
-                </div>
-
-               
-                <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class=" smooth-menu active"></li>
-                        <li class=" smooth-menu"><a href="#education">education</a></li>
-                        <li class="smooth-menu"><a href="#skills">skills</a></li>
-                        <li class="smooth-menu"><a href="#experience">experience</a></li>
-                        <li class="smooth-menu"><a href="#profiles">profile</a></li>
-                        <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-                        <li class="smooth-menu"><a href="#clients">Intership</a></li>
-                        <li class="smooth-menu"><a href="#contact">contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-       
-    </div>
-
-    <div class="clearfix"></div>
-
+        <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="smooth-menu active"></li>
+            <li class="smooth-menu"><a href="#education">{{'educations' | translate}}</a></li>
+            <li class="smooth-menu"><a href="#skills">{{'skills_nav' | translate}}</a></li>
+            <li class="smooth-menu"><a href="#experience">{{'experience.heading' | translate}}</a></li>
+            <li class="smooth-menu"><a href="#profiles">{{'hobbies.heading' | translate}}</a></li>
+<!--            <li class="smooth-menu"><a href="#clients">{{'Internships' | translate}}</a></li>-->
+            <li class="smooth-menu"><a href="#clients">{{'internship' | translate}}</a></li>
+            <li class="smooth-menu"><a href="#contact">{{'contact' | translate}}</a></li>
+            <li class="smooth-menu">
+              <select [(ngModel)]="selectedLanguage" (ngModelChange)="changeSiteLanguage($event)">
+                <option *ngFor="let l of languageList" [value]="l.code">{{ l.label }}</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="lang">
+        <select [(ngModel)]="selectedLanguage" (ngModelChange)="changeSiteLanguage($event)">
+          <option *ngFor="let l of languageList" [value]="l.code">{{ l.label }}</option>
+        </select>
+      </div>
+    </nav>
+  </div>
+  <div class="clearfix"></div>
 </header>

@@ -1,778 +1,526 @@
-<app-header></app-header>
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> Samah <br> Dhouihri <span>.</span>   </h2>
-							<p>a Finance Student</p>
-							<a href="" download style="background: #9b59b6;border:1px solid #9b59b6">download resume</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+<div class="splash" *ngIf="showSplash">
+  <div class="splash-text">
+    <span class="text hi-en">Hi</span>
+    <span class="text hi-fr">Bonjour</span>
+    <span class="text hi-ar">مرحبا</span>
+    <span class="text hi-de">Hallo</span>
+    <span class="text hi-zh">你好</span>
+    <span class="text hi-es">Hola</span>
+  </div>
+</div>
+<ng-container>
+  <app-header></app-header>
+  <!-- welcome-hero start -->
+  <section id="welcome-hero" class="welcome-hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="header-text">
+            <h2>{{ 'welcomeHero.greeting' | translate }}, <br> {{ 'welcomeHero.introduction' | translate }} <span>.</span>
+            </h2>
+            <p>{{ 'welcomeHero.description' | translate }}</p>
+            <a href="assets/download/Cv.pdf" download style="background: #9b59b6;border:1px solid #9b59b6">
+              {{ 'welcomeHero.downloadResume' | translate }}
+            </a>
+          </div><!-- /.header-text-->
+        </div><!-- /.col-->
+      </div><!-- /.row-->
+    </div><!-- /.container-->
+  </section><!-- /.welcome-hero-->
+  <!-- welcome-hero end -->
+  <!-- about start -->
+  <section id="about" class="about">
+    <div class="section-heading text-center">
+      <h2>{{ 'about.heading' | translate }}</h2>
+    </div>
+    <div class="container">
+      <div class="about-content">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="single-about-txt">
+              <h3>
+                {{ 'about.intro' | translate }}
+              </h3>
+              <p>
+                {{ 'about.details' | translate }}
+              </p>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="single-about-add-info">
+                    <h3>{{ 'about.phone' | translate }}</h3>
+                    <p>{{ 'about.phoneNumber' | translate }}</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-about-add-info">
+                    <h3>{{ 'about.email' | translate }}</h3>
+                    <p>{{ 'about.emailAddress' | translate }}</p>
+                  </div>
+                </div>
+                <!-- <div class="col-sm-4">
+                  <div class="single-about-add-info">
+                    <h3>{{ 'about.website' | translate }}</h3>
+                    <p>www.brownsine.com</p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-offset-1 col-sm-5">
+            <div class="single-about-img">
+              <img src="assets/photos/photo1.jpeg" alt="{{ 'about.profileImageAlt' | translate }}">
+              <div class="about-list-icon">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=100005041907790">
+                      <i class="fa-brands fa-facebook" aria-hidden="true"></i>
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/samah-dhouihri-443a091a3/">
+                      <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
 
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/samah_dhouihri/">
+                      <i class="fa-brands fa-instagram" aria-hidden="true"></i>
 
-						<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									I am a passionate Finance Student with a keen interest in investment strategies and market analysis. My journey in finance has equipped me with the skills to navigate complex financial landscapes.
-								</h3>
-								<p>
-									With a strong foundation in financial principles, I am dedicated to understanding the intricacies of the financial world. I thrive on challenges and am always eager to learn more about financial markets, risk management, and economic trends. My goal is to contribute to innovative financial solutions that drive success.
-								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>+216 93 870 871</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>dhouihrisameh@gmail.com</p>
-										</div>
-									</div>
-									<!-- <div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>website</h3>
-											<p>www.brownsine.com</p>
-										</div>
-									</div> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/photos/photo1.jpeg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-										<li>
-											<a href="https://www.facebook.com/profile.php?id=100005041907790">
-												<i class="fa-brands fa-facebook"></i>
-											</a>
-										</li>
-										<!-- <li>
-											<a href="#">
-												<i class="fa fa-dribbble" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-										</li> -->
-										<li>
-											<a href="https://www.linkedin.com/in/samah-dhouihri-443a091a3/">
-												<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/samah_dhouihri/">
-												<i class="fa-brands fa-instagram"></i>
-											</a>
-										</li><!-- / li -->
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
+                    </a>
+                  </li>
+                </ul><!-- / ul -->
+              </div><!-- /.about-list-icon -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/.about-->
+  <!-- about end -->
 
-
-
-		<!--education start -->
-		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2>education</h2>
-			</div>
-			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2022</h2>
-									<h3>Baccalaureate <span>in </span> Math</h3> <!-- Updated to reflect her BAC -->
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											Lycee Hay Riadh , Bouficha
-										</h4>
-										<h5>Bouficha, Sousse</h5>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2021 - Present</h2>
-									<h3>Lisence <span>in </span> Finance</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											ESTIM Busniess school
-										</h4>
-										<h5>Sahloul, Sousse</h5>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.education-->
-		<!--education end -->
-
-
-				<!--skills start -->
-				<section id="skills" class="skills">
-					<div class="skill-content">
-						<div class="section-heading text-center">
-							<h2>Languages</h2>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="single-skill-content">
-										<div class="barWrapper">
-											<span class="progressText">Arabic</span>
-											<div class="single-progress-txt">
-												<div class="progress ">
-													<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100" >
-
-													</div>
-												</div>
-												<h3>100%</h3>
-											</div>
-										</div><!-- /.barWrapper -->
-										<div class="barWrapper">
-											<span class="progressText">English</span>
-											<div class="single-progress-txt">
-												<div class="progress ">
-												   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" >
-
-												   </div>
-												</div>
-												<h3>90%</h3>
-											</div>
-										</div><!-- /.barWrapper -->
-										<div class="barWrapper">
-											<span class="progressText">French</span>
-											<div class="single-progress-txt">
-												<div class="progress ">
-												   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" >
-
-												   </div>
-												</div>
-												<h3>80%</h3>
-											</div>
-										</div><!-- /.barWrapper -->
-										<div class="barWrapper">
-											<span class="progressText">Spanish</span>
-											<div class="single-progress-txt">
-												<div class="progress ">
-												   <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="10" aria-valuemax="100" >
-
-												   </div>
-												</div>
-												<h3>50%</h3>
-											</div>
-										</div><!-- /.barWrapper -->
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="single-skill-content">
-										<div class="barWrapper">
-											<span class="progressText">German</span>
-											<div class="single-progress-txt">
-												<div class="progress ">
-													<div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="10" aria-valuemax="100" >
-
-													</div>
-												</div>
-												<h3>65%</h3>
-											</div>
-										</div><!-- /.barWrapper -->
-
-									</div>
-								</div>
-							</div><!-- /.row -->
-						</div>	<!-- /.container -->
-					</div><!-- /.skill-content-->
-
-			</section><!--/.skills-->
-			<!--skills end -->
+  <!-- education start -->
+  <section id="education" class="education">
+    <div class="section-heading text-center">
+      <h2>{{ 'education.heading' | translate }}</h2>
+    </div>
+    <div class="container">
+      <div class="education-horizontal-timeline">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="single-horizontal-timeline">
+              <div class="experience-time">
+                <h2>{{ 'education.baccalaureateYear' | translate }}</h2>
+                <h3>{{ 'education.baccalaureateTitle' | translate }}</h3>
+              </div><!--/.experience-time-->
+              <div class="timeline-horizontal-border">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <span class="single-timeline-horizontal"></span>
+              </div>
+              <div class="timeline">
+                <div class="timeline-content">
+                  <h4 class="title">
+                    {{ 'education.baccalaureateSchool' | translate }}
+                  </h4>
+                  <h5>{{ 'education.baccalaureateLocation' | translate }}</h5>
+                </div><!--/.timeline-content-->
+              </div><!--/.timeline-->
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="single-horizontal-timeline">
+              <div class="experience-time">
+                <h2>{{ 'education.currentYear' | translate }}</h2>
+                <h3>{{ 'education.currentTitle' | translate }}</h3>
+              </div><!--/.experience-time-->
+              <div class="timeline-horizontal-border">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <span class="single-timeline-horizontal"></span>
+              </div>
+              <div class="timeline">
+                <div class="timeline-content">
+                  <h4 class="title">
+                    {{ 'education.currentSchool' | translate }}
+                  </h4>
+                  <h5>{{ 'education.currentLocation' | translate }}</h5>
+                </div><!--/.timeline-content-->
+              </div><!--/.timeline-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/.education-->
+  <!-- education end -->
 
 
-
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>Miscellaneous</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2024 - 2025
-													</h2>
-													<h3>Visit to the Cité de la Culture with ESTIM Business School</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															University Trip
-														</h4>
-														<h5>Tunis, Tunisia</h5>
-														<p class="description">
-															Participated in a guided tour of the Cité de la Culture, where I explored various exhibitions and cultural events. This visit provided valuable insights into the intersection of culture and business, enhancing my appreciation for the role of cultural institutions in economic development.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2024 - 2025
-													</h2>
-													<h3>Visit to the Cité de la Culture with ESTIM Business School</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2024 - 2025</h2>
-													<h3>Participation in the 3rd edition of the Forum d'investissement et de
-														Private Initiative</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Participant and Contributor at Investment Forum
-														</h4>
-														<h5>Tunis, Tunisia</h5>
-														<p class="description">
-															Engaged in discussions and workshops focused on investment opportunities and strategies. Contributed insights on community-driven initiatives and networked with industry leaders to foster collaboration and innovation in the financial sector.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2023 - 2024</h2>
-													<h3>Participation in the 1st edition of the Projets des Estimiens
-														with an awareness-raising project</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Project Coordinator at Projets des Estimiens
-														</h4>
-														<h5>Sahloul, Sousse</h5>
-														<p class="description">
-															Coordinated an awareness-raising project aimed at educating the community on important social issues. This role involved organizing events, collaborating with local organizations, and engaging participants to foster a sense of community involvement and responsibility.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023 - 2024
-													</h2>
-													<h3>Attendance at business intelligence seminar</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Seminar Attendance
-														</h4>
-														<h5>Sahlool, Sousse</h5>
-														<p class="description">
-															Attended a business intelligence seminar focused on the latest trends and tools in data analysis. This experience enhanced my understanding of data-driven decision-making and provided valuable insights into effective business strategies.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023 - 2024
-													</h2>
-													<h3>Attendance at business intelligence seminar</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2023 - 2024</h2>
-													<h3>Social media manager</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Social media manager for “We Lead Club” at ESTIM Business School
-														</h4>
-														<h5>Sahlool, Sousse</h5>
-														<p class="description">
-															As the Social Media Manager, I am responsible for developing and implementing social media strategies to enhance the club's online presence, engage with students, and promote events. My role involves creating content, managing social media accounts, and analyzing performance metrics to drive engagement and growth.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2022 - 2023
-													</h2>
-													<h3>Volunteer with Croissant Rouge Polyestim</h3>
-													<h3>Active member of Enactus Club Polytechnique</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Clubs Membring
-														</h4>
-														<h5>Sahlool, Sousse</h5>
-														<p class="description">
-															Active participation in projects aimed at improving the community and developing entrepreneurial skills.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2022 - 2023
-
-													</h2>
-													<h3>Volunteer with Croissant Rouge Polyestim</h3>
-													<h3>Active member of Enactus Club Polytechnique</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2023</h2>
-													<h3>French and English language teaching for pupils
-														primary and secondary schools</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Teacher
-														</h4>
-														<h5>Bouficha , Sousse</h5>
-														<p class="description">
-															Teaching French and English to primary and secondary school pupils involves developing their language skills, enhancing their communication abilities, and fostering a love for learning through engaging and interactive lessons.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
-
-		</section><!--/.experience-->
-		<!--experience end -->
-
-		<!--profiles start -->
-		<section id="profiles" class="profiles">
-			<div class="profiles-details">
-				<div class="section-heading text-center">
-					<h2>Hobbies</h2>
-				</div>
-				<div class="container">
-					<div class="profiles-content">
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="fa-solid fa-record-vinyl fa-2x"></i></a>
-										<div class="profile-icon-name">Photography</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="fa-solid fa-record-vinyl fa-2x"></i></a>
-											<div class="profile-icon-name">Photography</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="fa-solid fa-video fa-2x"></i></a>
-										<div class="profile-icon-name">Videography</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="fa-solid fa-video fa-2x"></i></a>
-											<div class="profile-icon-name">Videography</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="fa-solid fa-bezier-curve fa-2x"></i></a>
-										<div class="profile-icon-name">Graphic design</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="fa-solid fa-bezier-curve fa-2x"></i></a>
-											<div class="profile-icon-name">Graphic design</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="fa-solid fa-music fa-2x"></i></a>
-										<div class="profile-icon-name">Music</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="fa-solid fa-music fa-2x"></i></a>
-											<div class="profile-icon-name">Music</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="profile-border"></div>
-						<div class="row">
-							<div class="col-sm-3">
-								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="fa-solid fa-person-walking fa-2x"></i></a>
-										<div class="profile-icon-name">Sport</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="fa-solid fa-person-walking fa-2x"></i></a>
-											<div class="profile-icon-name">Sport</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section><!--/.profiles-->
-		<!--profiles end -->
+  <!--skills start -->
+  <section id="skills" class="skills">
+    <div class="skill-content">
+      <div class="section-heading text-center">
+        <h2>{{ 'skills.heading' | translate }}</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="single-skill-content">
+              <div class="barWrapper">
+                <span class="progressText">{{ 'skills.languages.arabic' | translate }}</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10"
+                         aria-valuemax="100"></div>
+                  </div>
+                  <h3>100%</h3>
+                </div>
+              </div><!-- /.barWrapper -->
+              <div class="barWrapper">
+                <span class="progressText">{{ 'skills.languages.english' | translate }}</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10"
+                         aria-valuemax="100"></div>
+                  </div>
+                  <h3>90%</h3>
+                </div>
+              </div><!-- /.barWrapper -->
+              <div class="barWrapper">
+                <span class="progressText">{{ 'skills.languages.french' | translate }}</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10"
+                         aria-valuemax="100"></div>
+                  </div>
+                  <h3>80%</h3>
+                </div>
+              </div><!-- /.barWrapper -->
+              <div class="barWrapper">
+                <span class="progressText">{{ 'skills.languages.spanish' | translate }}</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="10"
+                         aria-valuemax="100"></div>
+                  </div>
+                  <h3>50%</h3>
+                </div>
+              </div><!-- /.barWrapper -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="single-skill-content">
+              <div class="barWrapper">
+                <span class="progressText">{{ 'skills.languages.german' | translate }}</span>
+                <div class="single-progress-txt">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="10"
+                         aria-valuemax="100"></div>
+                  </div>
+                  <h3>65%</h3>
+                </div>
+              </div><!-- /.barWrapper -->
+            </div>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.skill-content-->
+  </section><!--/.skills-->
+  <!--skills end -->
 
 
-		<!-- <section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>portfolio</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
+  <!-- experience start -->
+  <section id="experience" class="experience">
+    <div class="section-heading text-center">
+      <h2>{{ 'experience.heading' | translate }}</h2>
+    </div>
+    <div class="container">
+      <div class="experience-content">
+        <div class="main-timeline">
+          <ul>
+            <li *ngFor="let item of ('experience.items' | translate)">
+              <div class="single-timeline-box fix">
+                <div class="row">
+                  <div class="col-md-offset-1 col-md-5 experience-time-responsive">
+                    <div class="experience-time">
+                      <h2>
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        {{ item.date }}
+                      </h2>
+                      <h3>{{ item.title }}</h3>
+                    </div><!--/.experience-time-->
+                  </div><!--/.col-->
+                  <div class="col-md-5">
+                    <div class="timeline">
+                      <div class="timeline-content text-right">
+                        <h4 class="title">
+                          {{ item.role }}
+                        </h4>
+                        <h5>{{ item.location }}</h5>
+                        <p class="description">
+                          {{ item.description }}
+                        </p>
+                      </div><!--/.timeline-content-->
+                    </div><!--/.timeline-->
+                  </div><!--/.col-->
+                  <div class="col-md-offset-1 col-md-5 experience-time-main">
+                    <div class="experience-time">
+                      <h2>
+                        <span><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        {{ item.date }}
+                      </h2>
+                      <h3>{{ item.title }}</h3>
+                    </div><!--/.experience-time-->
+                  </div><!--/.col-->
+                </div>
+              </div><!--/.single-timeline-box-->
+            </li>
+          </ul>
+        </div><!-- .main-timeline -->
+      </div><!-- .experience-content -->
+    </div>
+  </section><!-- .experience -->
+  <!-- experience end -->
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												ui/ux design
-											</a>
-										</div>
-									</div>
-									<div class="item">
-										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												ui/ux design
-											</a>
-										</div>
-									</div>
-								</div>
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web design
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div>
-									</div>
-									<div class="item">
-										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section> -->
-		<!--portfolio end -->
-
-		<!--clients start -->
-		<section id="clients" class="clients">
-			<div class="section-heading text-center">
-				<h2>Intership</h2>
-			</div>
-			<div class="clients-area">
-				<div class="container">
-					<div class="owl-carousel owl-theme" id="client">
-						<div class="item">
-							<a href="#" style="filter: brightness(1) saturate(0%);">
-								<img src="assets/photos/tijarri.png" alt="brand-image" />
-							</a>
-						</div>
-						 <div class="item">
-							<a href="#"  style="filter: brightness(1) saturate(0%);    transform: translateY(35px);">
-								<img src="assets/photos/valeo.jpeg" alt="brand-image" />
-							</a>
-						</div>
-						<!--<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c3.png" alt="brand-image" />
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c4.png" alt="brand-image" />
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c5.png" alt="brand-image" />
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c6.png" alt="brand-image" />
-							</a>
-						</div>
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c7.png" alt="brand-image" />
-							</a>
-						</div> -->
-					</div><!--/.owl-carousel-->
-				</div><!--/.container-->
-			</div><!--/.clients-area-->
-
-		</section><!--/.clients-->
+  <!-- profiles start -->
+  <section id="profiles" class="profiles">
+    <div class="profiles-details">
+      <div class="section-heading text-center">
+        <h2>{{ 'hobbies.heading' | translate }}</h2>
+      </div>
+      <div class="container">
+        <div class="profiles-content">
+          <div class="row">
+            <div class="col-sm-3" *ngFor="let item of ('hobbies.items' | translate)">
+              <div class="single-profile">
+                <div class="profile-txt">
+                  <a href=""><i [ngClass]="'fa-solid '+item.icon + ' fa-2x'"></i></a>
+                  <div class="profile-icon-name">{{ item.name }}</div>
+                </div>
+                <div class="single-profile-overlay">
+                  <div class="profile-txt">
+                    <a href=""><i [ngClass]="'fa-solid '+item.icon + ' fa-2x'"></i></a>
+                    <div class="profile-icon-name">{{ item.name }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile-border"></div>
+          <div class="row">
+            <!-- If you want to add more profiles here, just add them to your JSON and the component will handle them automatically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/.profiles-->
+  <!-- profiles end -->
 
 
 
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-form">
-									<form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
-								</div><!--/.contact-form-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Samah Dhouihri</h3>
-										<p>Finance Student</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>phone</h3>
-											<p>+216 93 870 871</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>dhouihrisameh@gmail.com</p>
-										</div>
-									</div>
-								</div><!--/.contact-adress-->
-								<div class="hm-foot-icon">
-									<ul>
-										<li>											<a href="https://www.instagram.com/samah_dhouihri/">
-											<i class="fa-brands fa-facebook"></i>
-										</a>
-									</li><!--/li-->
-										<li>											<a href="https://www.facebook.com/profile.php?id=100005041907790">
-											<i class="fa-brands fa-instagram"></i>
-										</a></li><!--/li-->
+  <!-- <section id="portfolio" class="portfolio">
+    <div class="portfolio-details">
+      <div class="section-heading text-center">
+        <h2>portfolio</h2>
+      </div>
+      <div class="container">
+        <div class="portfolio-content">
+          <div class="isotope">
+            <div class="row">
 
-									</ul><!--/ul-->
-								</div><!--/.hm-foot-icon-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
+              <div class="col-sm-4">
+                <div class="item">
+                  <img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      ui/ux design
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      ui/ux design
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-		</section><!--/.contact-->
-		<!--contact end -->
+              <div class="col-sm-4">
+                <div class="item">
+                  <img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      web design
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="item">
+                  <img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      web development
+                    </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
+                  <div class="isotope-overlay">
+                    <a href="#">
+                      web development
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section> -->
+  <!--portfolio end -->
+
+  <!--clients start -->
+  <section id="clients" class="clients">
+    <div class="section-heading text-center">
+      <h2>{{'internship'|translate}}</h2>
+    </div>
+    <div class="clients-area">
+      <div class="container">
+        <div class="owl-carousel owl-theme" id="client">
+          <div class="item">
+            <a href="#" style="filter: brightness(1) saturate(0%);">
+              <img src="assets/photos/tijarri.png" alt="brand-image"/>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#" style="filter: brightness(1) saturate(0%);    transform: translateY(35px);">
+              <img src="assets/photos/valeo.jpeg" alt="brand-image"/>
+            </a>
+          </div>
+          <!--<div class="item">
+            <a href="#">
+              <img src="assets/images/clients/c3.png" alt="brand-image" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="assets/images/clients/c4.png" alt="brand-image" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="assets/images/clients/c5.png" alt="brand-image" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="assets/images/clients/c6.png" alt="brand-image" />
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="assets/images/clients/c7.png" alt="brand-image" />
+            </a>
+          </div> -->
+        </div><!--/.owl-carousel-->
+      </div><!--/.container-->
+    </div><!--/.clients-area-->
+
+  </section><!--/.clients-->
 
 
-<app-footer></app-footer>
+  <!-- contact start -->
+  <section id="contact" class="contact">
+    <div class="section-heading text-center">
+      <h2>{{ 'contact_me.heading' | translate }}</h2>
+    </div>
+    <div class="container">
+      <div class="contact-content">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-5 col-sm-6">
+            <div class="single-contact-box">
+              <div class="contact-form">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="{{ 'contact_me.form.name' | translate }}" name="name">
+                      </div><!--/.form-group-->
+                    </div><!--/.col-->
+                    <div class="col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="{{ 'contact_me.form.email' | translate }}" name="email">
+                      </div><!--/.form-group-->
+                    </div><!--/.col-->
+                  </div><!--/.row-->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="{{ 'contact_me.form.subject' | translate }}" name="subject">
+                      </div><!--/.form-group-->
+                    </div><!--/.col-->
+                  </div><!--/.row-->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="form-group">
+                        <textarea class="form-control" rows="8" id="comment" placeholder="{{ 'contact_me.form.message' | translate }}"></textarea>
+                      </div><!--/.form-group-->
+                    </div><!--/.col-->
+                  </div><!--/.row-->
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="single-contact-btn">
+                        <a class="contact-btn" href="#" role="button">{{ 'contact_me.form.submit' | translate }}</a>
+                      </div><!--/.single-single-contact-btn-->
+                    </div><!--/.col-->
+                  </div><!--/.row-->
+                </form><!--/form-->
+              </div><!--/.contact-form-->
+            </div><!--/.single-contact-box-->
+          </div><!--/.col-->
+          <div class="col-md-offset-1 col-md-5 col-sm-6">
+            <div class="single-contact-box">
+              <div class="contact-adress">
+                <div class="contact-add-head">
+                  <h3>{{ 'contact_me.address.name' | translate }}</h3>
+                  <p>{{ 'contact_me.address.title' | translate }}</p>
+                </div>
+                <div class="contact-add-info">
+                  <div class="single-contact-add-info">
+                    <h3>{{ 'contact_me.address.phone' | translate }}</h3>
+                    <p>{{ 'contact_me.address.phoneNumber' | translate }}</p>
+                  </div>
+                  <div class="single-contact-add-info">
+                    <h3>{{ 'contact_me.address.email' | translate }}</h3>
+                    <p>{{ 'contact_me.address.emailAddress' | translate }}</p>
+                  </div>
+                </div>
+              </div><!--/.contact-adress-->
+              <div class="hm-foot-icon">
+                <ul>
+                  <li><a [href]="'contact_me.socials.facebook' | translate">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a></li><!--/li-->
+                  <li><a [href]="'contact_me.socials.instagram' | translate">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a></li><!--/li-->
+                </ul><!--/ul-->
+              </div><!--/.hm-foot-icon-->
+            </div><!--/.single-contact-box-->
+          </div><!--/.col-->
+        </div><!--/.row-->
+      </div><!--/.contact-content-->
+    </div><!--/.container-->
+  </section><!--/.contact-->
+  <!-- contact end -->
+
+
+
+  <app-footer></app-footer>
+</ng-container>
+

@@ -1,0 +1,67 @@
+/* home.component.scss */
+.splash {
+  width: 100%;
+  height: 100vh;
+  background: #9b59b6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500000;
+  overflow: hidden;
+
+}
+
+.splash-text {
+  position: absolute;
+  top: 47%;
+  left: 48%;
+  font-size: 5rem;
+  color: white;
+  transform: translate(-50%,-50%);
+
+}
+
+.text {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+.hi-en {
+  animation: fadeInOut 5s infinite 0.83s;
+}
+
+.hi-fr {
+  animation: fadeInOut 5s infinite 1.66s;
+}
+
+.hi-ar {
+  animation: fadeInOut 5s infinite 2.49s;
+}
+
+.hi-de {
+  animation: fadeInOut 5s infinite 3.32s;
+}
+
+.hi-zh {
+  animation: fadeInOut 5s infinite 4.15s;
+}
+
+.hi-es {
+  animation: fadeInOut 5s infinite 5s;
+}

@@ -1,0 +1,155 @@
+{
+  "educations": "Education",
+  "skills_nav": "Skills",
+  "experience_nav": "Experience",
+  "profiles": "Profile",
+  "portfolio": "Portfolio",
+  "internship": "Internship",
+  "contact": "Contact",
+  "welcomeHero": {
+    "greeting": "hi",
+    "introduction": "i am Samah Dhouihri",
+    "description": "a Finance Student",
+    "downloadResume": "download resume"
+  },
+  "about": {
+    "heading": "about me",
+    "intro": "I am a passionate Finance Student with a keen interest in investment strategies and market analysis. My journey in finance has equipped me with the skills to navigate complex financial landscapes.",
+    "details": "With a strong foundation in financial principles, I am dedicated to understanding the intricacies of the financial world. I thrive on challenges and am always eager to learn more about financial markets, risk management, and economic trends. My goal is to contribute to innovative financial solutions that drive success.",
+    "phone": "phone",
+    "phoneNumber": "+216 93 870 871",
+    "email": "email",
+    "emailAddress": "dhouihrisameh@gmail.com",
+    "website": "website",
+    "profileImageAlt": "profile_image",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram"
+  },
+  "education": {
+    "heading": "education",
+    "baccalaureateYear": "2022",
+    "baccalaureateTitle": "Baccalaureate in Math",
+    "baccalaureateSchool": "Lycee Hay Riadh, Bouficha",
+    "baccalaureateLocation": "Bouficha, Sousse",
+    "currentYear": "2021 - Present",
+    "currentTitle": "License in Finance",
+    "currentSchool": "ESTIM Business School",
+    "currentLocation": "Sahloul, Sousse"
+  },
+  "skills": {
+    "heading": "Languages",
+    "languages": {
+      "arabic": "Arabic",
+      "english": "English",
+      "french": "French",
+      "spanish": "Spanish",
+      "german": "German"
+    }
+  },
+  "experience": {
+    "heading": "Miscellaneous",
+    "items": [
+      {
+        "date": "2024 - 2025",
+        "title": "Visit to the Cité de la Culture with ESTIM Business School",
+        "role": "University Trip",
+        "location": "Tunis, Tunisia",
+        "description": "Participated in a guided tour of the Cité de la Culture, where I explored various exhibitions and cultural events. This visit provided valuable insights into the intersection of culture and business, enhancing my appreciation for the role of cultural institutions in economic development."
+      },
+      {
+        "date": "2024 - 2025",
+        "title": "Participation in the 3rd edition of the Forum d'investissement et de Private Initiative",
+        "role": "Participant and Contributor at Investment Forum",
+        "location": "Tunis, Tunisia",
+        "description": "Engaged in discussions and workshops focused on investment opportunities and strategies. Contributed insights on community-driven initiatives and networked with industry leaders to foster collaboration and innovation in the financial sector."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Participation in the 1st edition of the Projets des Estimiens with an awareness-raising project",
+        "role": "Project Coordinator at Projets des Estimiens",
+        "location": "Sahloul, Sousse",
+        "description": "Coordinated an awareness-raising project aimed at educating the community on important social issues. This role involved organizing events, collaborating with local organizations, and engaging participants to foster a sense of community involvement and responsibility."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Attendance at business intelligence seminar",
+        "role": "Seminar Attendance",
+        "location": "Sahlool, Sousse",
+        "description": "Attended a business intelligence seminar focused on the latest trends and tools in data analysis. This experience enhanced my understanding of data-driven decision-making and provided valuable insights into effective business strategies."
+      },
+      {
+        "date": "2023 - 2024",
+        "title": "Social media manager",
+        "role": "Social media manager for “We Lead Club” at ESTIM Business School",
+        "location": "Sahlool, Sousse",
+        "description": "As the Social Media Manager, I am responsible for developing and implementing social media strategies to enhance the club's online presence, engage with students, and promote events. My role involves creating content, managing social media accounts, and analyzing performance metrics to drive engagement and growth."
+      },
+      {
+        "date": "2022 - 2023",
+        "title": "Volunteer with Croissant Rouge Polyestim and Active member of Enactus Club Polytechnique",
+        "role": "Clubs Member",
+        "location": "Sahlool, Sousse",
+        "description": "Active participation in projects aimed at improving the community and developing entrepreneurial skills."
+      },
+      {
+        "date": "2023",
+        "title": "French and English language teaching for pupils in primary and secondary schools",
+        "role": "Teacher",
+        "location": "Bouficha, Sousse",
+        "description": "Teaching French and English to primary and secondary school pupils involves developing their language skills, enhancing their communication abilities, and fostering a love for learning through engaging and interactive lessons."
+      }
+    ]
+  },
+  "hobbies": {
+    "heading": "Hobbies",
+    "items": [
+      {
+        "icon": "fa-record-vinyl",
+        "name": "Photography"
+      },
+      {
+        "icon": "fa-video",
+        "name": "Videography"
+      },
+      {
+        "icon": "fa-bezier-curve",
+        "name": "Graphic design"
+      },
+      {
+        "icon": "fa-music",
+        "name": "Music"
+      },
+      {
+        "icon": "fa-person-walking",
+        "name": "Sport"
+      }
+    ]
+  },
+  "contact_me": {
+    "heading": "Contact Me",
+    "form": {
+      "name": "Name*",
+      "email": "Email*",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "address": {
+      "name": "Samah Dhouihri",
+      "title": "Finance Student",
+      "phone": "Phone",
+      "phoneNumber": "+216 93 870 871",
+      "email": "Email",
+      "emailAddress": "dhouihrisameh@gmail.com"
+    },
+    "socials": {
+      "facebook": "https://www.facebook.com/profile.php?id=100005041907790",
+      "instagram": "https://www.instagram.com/samah_dhouihri/"
+    }
+  },
+  "footer": {
+    "copyright": "&copy; copyright samah_dhouihri",
+    "scrollToTop": "Scroll to Top"
+  }
+}

@@ -1,0 +1,32 @@
+.lang {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  padding: 0.1vw;
+
+  select {
+    border: none;
+    color: #9b59b6;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.smooth-menu {
+  select {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem; /* Adjusted padding to a more typical value */
+    border-radius: 0;
+    border: 1px solid #9b59b6;
+    background: white;
+    color: #9b59b6;
+
+    @media screen and (max-width: 1980px) and (min-width: 768px) {
+      display: none;
+    }
+  }
+}

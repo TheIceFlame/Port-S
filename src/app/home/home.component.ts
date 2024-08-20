@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  showSplash = true;
 
+  ngOnInit(): void {
+    // Show splash screen for 18 seconds
+    setTimeout(() => {
+      this.showSplash = false;
+    }, 6000); // Duration should match the CSS animation duration
+  }
 }
