@@ -1,4 +1,4 @@
-<div class="splash" *ngIf="showSplash">
+<!--<div class="splash" *ngIf="showSplash">
   <div class="splash-text">
     <span class="text hi-en">Hi</span>
     <span class="text hi-fr">Bonjour</span>
@@ -7,7 +7,7 @@
     <span class="text hi-zh">你好</span>
     <span class="text hi-es">Hola</span>
   </div>
-</div>
+</div>-->
 <ng-container>
   <app-header></app-header>
   <!-- welcome-hero start -->
@@ -237,10 +237,10 @@
         <div class="main-timeline">
           <ul>
             <li *ngFor="let item of ('experience.items' | translate)">
-              <div class="single-timeline-box fix">
+              <div class="single-timeline-box fix" *ngIf="item.date || item.title"> <!-- Added condition -->
                 <div class="row">
                   <div class="col-md-offset-1 col-md-5 experience-time-responsive">
-                    <div class="experience-time">
+                    <div class="experience-time" *ngIf="item.date || item.title"> <!-- Added condition -->
                       <h2>
                         <span><i class="fa fa-circle" aria-hidden="true"></i></span>
                         {{ item.date }}
@@ -261,7 +261,7 @@
                       </div><!--/.timeline-content-->
                     </div><!--/.timeline-->
                   </div><!--/.col-->
-                  <div class="col-md-offset-1 col-md-5 experience-time-main">
+                  <div class="col-md-offset-1 col-md-5 experience-time-main" *ngIf="item.date || item.title"> <!-- Added condition -->
                     <div class="experience-time">
                       <h2>
                         <span><i class="fa fa-circle" aria-hidden="true"></i></span>
@@ -280,6 +280,7 @@
   </section><!-- .experience -->
   <!-- experience end -->
 
+  
 
   <!-- profiles start -->
   <section id="profiles" class="profiles">

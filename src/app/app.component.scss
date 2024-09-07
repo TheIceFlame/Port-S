@@ -1,0 +1,44 @@
+.language-container {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 7rem; // Changed width to 1rem
+    min-height: 10rem;
+    background: rgba(155, 89, 182, 0.5);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    transition: width 0.3s; // Added transition for smooth animation
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    i{
+        font-size: 4rem;
+        color: #9b59b6;
+    }
+    span{
+        display: none;
+        
+    }
+
+    @media screen and (max-width:992px) {
+        display: none;
+    }
+}
+
+.language-container:hover {
+    width: 12rem;
+    i{
+        display: none;
+    }
+    span{
+        display: block;
+        font-size: 2.3rem;
+        color: #9b59b6;
+        cursor: pointer;
+        &:hover{
+            color:white
+        }
+    }
+    height: auto;
+}

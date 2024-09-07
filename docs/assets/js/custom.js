@@ -77,7 +77,8 @@ $(document).ready(function(){
 		
 			$('#client').owlCarousel({
 				items:7,
-				loop:true,
+				loop:false,
+				center:true,
 				smartSpeed: 1000,
 				autoplay:true,
 				dots:false,

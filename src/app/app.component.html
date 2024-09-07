@@ -1,2 +1,5 @@
 <router-outlet></router-outlet>
-
+<div class="language-container">
+    <i class="fa-solid fa-globe"></i>
+    <span *ngFor="let language of languageList" (click)="changeSiteLanguage(language.code)">{{language.label}}</span>
+</div>
