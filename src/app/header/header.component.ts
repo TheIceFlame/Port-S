@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
     { code: 'de', label: 'Deutsch' },
     { code: 'ar', label: 'Arabic' },
     { code: 'es', label: 'Spanish' },
-    // Add more languages as needed
+    
   ];
   selectedLanguage: string;
 
