@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from "@ngx-translate/core";
+import {VisitService} from "../services/visit.service";
 
 @Component({
   selector: 'app-header',
@@ -13,17 +14,26 @@ export class HeaderComponent implements OnInit {
     { code: 'de', label: 'Deutsch' },
     { code: 'ar', label: 'Arabic' },
     { code: 'es', label: 'Spanish' },
-    
+
   ];
   selectedLanguage: string;
 
-  constructor(private translate: TranslateService) {
-    // Initialize with a default language if needed
+  constructor(private translate: TranslateService,private service:VisitService) {
+
     this.selectedLanguage = 'en';
   }
-
+  registerVisit(): void {
+    this.service.registerVisit().subscribe(
+      response => {
+        console.log('Visit registered:', response);
+      },
+      error => {
+        console.error('Error registering visit:', error);
+      }
+    );
+  }
   ngOnInit(): void {
-    // Retrieve the saved language from localStorage or use default
+    this.registerVisit();
     const savedLanguage = localStorage.getItem('selectedLanguage');
     if (savedLanguage) {
       this.selectedLanguage = savedLanguage;
