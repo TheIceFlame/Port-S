@@ -133,7 +133,9 @@
       "email": "Email*",
       "subject": "Sujet",
       "message": "Message",
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "successMessage": "Message envoyé avec succès",
+      "errorMessage": "Tous les champs sont obligatoires"
     },
     "address": {
       "name": "Samah Dhouihri",

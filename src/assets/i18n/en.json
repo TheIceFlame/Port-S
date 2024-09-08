@@ -140,7 +140,9 @@
       "email": "Email*",
       "subject": "Subject",
       "message": "Message",
-      "submit": "Submit"
+      "submit": "Submit",
+      "successMessage": "Message Sent Successfully",
+      "errorMessage": "Fields are required"
     },
     "address": {
       "name": "Samah Dhouihri",

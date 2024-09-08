@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {environment} from "../../environments/environment";
-import {Observable} from "rxjs";
+import {lastValueFrom, Observable} from "rxjs";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 @Injectable({
@@ -21,5 +21,9 @@ export class VisitService {
     const url = `${this.baseUrl}api/visitors/register`; // Combine base URL with endpoint
 
     return this.http.get(url, { headers });
+  }
+
+  SendMail(formData: any){
+    return lastValueFrom(this.http.post<any>(environment.apiUrl+ `api/contact/submit`, formData ))
   }
 }
