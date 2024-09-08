@@ -1,4 +1,8 @@
 <router-outlet></router-outlet>
+<ngx-spinner bdColor = "#9b59b6" size = "large" color = "#9b59b6" type ="ball-spin" [fullScreen] = "true" >
+
+</ngx-spinner>
+
 <div class="language-container">
     <i class="fa-solid fa-globe"></i>
     <span *ngFor="let language of languageList" (click)="changeSiteLanguage(language.code)">{{language.label}}</span>
