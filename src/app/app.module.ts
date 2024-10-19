@@ -11,13 +11,15 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {NgxSpinnerModule} from "ngx-spinner";
+import { IntershipComponent } from './intership/intership.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    IntershipComponent
   ],
   imports: [
     BrowserModule,

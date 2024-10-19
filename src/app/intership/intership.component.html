@@ -1,0 +1,42 @@
+<input id="scene-1" type="radio" name="scene" value="1" checked (change)="onSceneChange($event)" />
+<input id="scene-2" type="radio" name="scene" value="2" (change)="onSceneChange($event)" />
+<!--<input id="scene-3" type="radio" name="scene" value="3" (change)="onSceneChange($event)" />-->
+<!--<input id="scene-4" type="radio" name="scene" value="4" (change)="onSceneChange($event)" />-->
+
+
+<main class="site" [ngStyle]="{'background-image':'white' +currentScene.backgroundImage}">
+  <div class="mask"></div>
+  <div class="landscape" [ngStyle]="{'background-image':currentScene.backgroundImage}">
+    <div class="landscape-text" [attr.data-scene]="currentScene.id">
+      {{ currentScene.title }}
+    </div>
+  </div>
+  <div class="left-side">
+    <div class="page-numbers" [attr.data-total]="2">
+      <div class="page-number page-number--tens">0</div>
+      <div class="page-number page-number--ones">
+        <div *ngFor="let scene of scenes">{{ scene.id }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+<!--    <div class="layer" *ngFor="let scene of scenes" [attr.data-scene]="scene.id">-->
+<!--      <h1 class="heading">{{ scene.title }}</h1>-->
+<!--    </div>-->
+    <nav class="slide-nav">
+      <div class="button-container">
+        <button class="nav-button">< Previous</button>
+        <button class="nav-button">Next ></button>
+      </div>
+      <div class="nav-button-container">
+        <label class="nav-button" *ngFor="let scene of scenes" [attr.for]="'scene-' + scene.id" [attr.data-scene]="scene.id">{{ scene.id }}</label>
+      </div>
+    </nav>
+  </div>
+  <div class="right-content">
+    <div class="layer" *ngFor="let scene of scenes" [attr.data-scene]="scene.id">
+      <h2 class="heading">{{ scene.subtitle }}</h2>
+      <p class="paragraph" [innerHTML]="scene.content"></p>
+    </div>
+  </div>
+</main>

@@ -4,10 +4,11 @@ import { HomeComponent } from './home/home.component';
 
 
 
-const routes: Routes = [];
-routes.push({ path: '', redirectTo: 'home', pathMatch: 'full' });
-
-routes.push({ path: '', component: HomeComponent });
+const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: '**', redirectTo: 'home' }  // Wildcard route for a 404 page
+];
 
 
 @NgModule({
